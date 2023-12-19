@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Tasks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="list round-border">
+      <h1 style="text-align: center; color: orange">LIST OF TASKS</h1>
+      <div class="date">
+        <div class="date-right">
+          <div id="date-number"></div>
+          <div>
+            <div id="date-month"></div>
+            <div id="date-year"></div>
+          </div>
+        </div>
+        <div id="date-text"></div>
+      </div>
+      <form onsubmit="addNewTask(event)">
+        <input
+          type="text"
+          name="taskText"
+          autocomplete="off"
+          placeholder="New Task"
+          class="round-border"
+        />
+        <button type="submit" class="add-task-button" class="round-border">
+          +
+        </button>
+        <button
+          type="button"
+          class="order-button round-border"
+          onclick="renderOrderedTasks()"
+        >
+          ORDER
+        </button>
+      </form>
+      <div id="tasks-container"></div>
+    </div>
+  </body>
+</html>

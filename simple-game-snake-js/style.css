@@ -1,0 +1,86 @@
+* {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: white;
+}
+
+#principal {
+  min-width: 500px;
+}
+
+#canvas {
+  border: cyan solid 10px;
+  border-radius: 20px;
+}
+
+#board,
+.boardInfo {
+  max-width: 500px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+#start,
+.boardInfo {
+  font-size: 25px;
+}
+
+#gameOver {
+  display: none;
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
+
+.boardInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#start {
+  background-color: transparent;
+  border: 3px solid orange;
+  border-radius: .5rem;
+  color: orange;
+  padding: 3px 5px 3px 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#start:hover {
+  border: 3px solid rgb(241, 185, 81);
+  color: rgb(241, 185, 81);
+}
+
+#scoreBoard {
+  display: inline-flex;
+}
+
+.square {
+  aspect-ratio: 1;
+  border-radius: 100px;
+}
+
+.emptySquare {
+  background-color: #000;
+}
+
+.snakeSquare {
+  background-color: blue;
+  border: 1px solid #000;
+}
+
+.foodSquare {
+  background-color: green;
+  border: 1px solid #000;
+}

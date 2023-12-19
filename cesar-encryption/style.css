@@ -1,0 +1,92 @@
+:root {
+  --color-terminal: #292b36;
+  --border-rounded: 10px;
+}
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: white;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+main {
+  padding: 30px;
+  box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+  border-radius: var(--border-rounded);
+}
+
+h1 {
+  margin: 0;
+  color: orange;
+}
+
+#input-original,
+#result {
+  background-color: var(--color-terminal);
+  width: -webkit-fill-available;
+  font-weight: bold;
+}
+
+#input-original {
+  margin: 10px 0px 0px;
+  padding: 10px;
+  color: white;
+  border: cyan 2px solid;
+  border-top-left-radius: var(--border-rounded);
+  border-top-right-radius: var(--border-rounded);
+}
+
+#result {
+  padding: 10px;
+  border: cyan 2px solid;
+  border-bottom-right-radius: var(--border-rounded);
+  border-bottom-left-radius: var(--border-rounded);
+  height: 10px;
+  padding-bottom: 15px;
+}
+
+.range {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  text-align: center;
+  align-items: center;
+}
+
+input[type='range'] {
+  border-radius: var(--border-rounded);
+  background: var(--color-terminal);
+  margin: 0;
+  padding: 0 5px;
+  height: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+output {
+  font-weight: bold;
+  color: lime;
+  font-size: large;
+  text-shadow: 0 0 0.4em #000,
+    0 0 0.4em #000,
+    0 0 0.4em #000
+}

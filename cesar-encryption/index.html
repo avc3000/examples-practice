@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cesar Encryption</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>CESAR ENCRYPTION</h1>
+      <form id="coder" autocomplete="off">
+        <input
+          type="text"
+          id="input-original"
+          spellcheck="false"
+          placeholder="Enter Text"
+          name="text"
+        />
+      </form>
+      <div id="result"></div>
+      <div class="range">
+        <input
+          type="range"
+          id="range"
+          value="10"
+          min="1"
+          max="20"
+          oninput="this.nextElementSibling.value = this.value"
+        />
+        <output>10</output>
+      </div>
+    </main>
+  </body>
+</html>
